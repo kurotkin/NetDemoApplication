@@ -33,36 +33,36 @@ class Note {
             Log.i("Tag", productCart.toString())
 
             // TODO: 6. Другие методы
-            // methods(productAPI)
+            methods(productAPI)
         }
     }
 
     // TODO: 6. Другие методы
-//    private suspend fun methods(productAPI: ApiService) {
-//        productAPI.apply {
-//            // GET /products/{productId}
-//            getMyProduct(1)
-//
-//            // POST /products/add
-//            addMyProduct(
-//                Product(
-//                    id = 99,
-//                    title = "Key Holder",
-//                    description = "Attractive DesignMetallic materialFour key hooksReliable & DurablePremium Quality",
-//                    price = 30.0,
-//                    discountPercentage = 2.92,
-//                    rating = 4.92,
-//                    stock = 54,
-//                    brand = "Golden",
-//                    category = "home-decoration",
-//                    thumbnail = "https://i.dummyjson.com/data/products/30/thumbnail.jpg",
-//                    images = arrayListOf("https://i.dummyjson.com/data/products/30/1.jpg")
-//                )
-//            )
-//
-//            // DELETE /products/{productId}
-//            deleteMyProduct(1)
-//        }
-//    }
+    private suspend fun methods(productAPI: ApiService) {
+        productAPI.apply {
+            // GET /products/{productId}
+            getMyProduct(1)
+
+            // POST /products/add
+            addMyProduct(
+                Product(
+                    id = 99,
+                    title = "Key Holder",
+                    description = "Attractive DesignMetallic materialFour key hooksReliable & DurablePremium Quality",
+                    price = 30.0,
+                    discountPercentage = 2.92,
+                    rating = 4.92,
+                    stock = 54,
+                    brand = "Golden",
+                    category = "home-decoration",
+                    thumbnail = "https://i.dummyjson.com/data/products/30/thumbnail.jpg",
+                    images = arrayListOf("https://i.dummyjson.com/data/products/30/1.jpg")
+                )
+            )
+
+            // DELETE /products/{productId}
+            deleteMyProduct(1)
+        }
+    }
 
 }

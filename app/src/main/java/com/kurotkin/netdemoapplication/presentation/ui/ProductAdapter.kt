@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.ListAdapter
 import com.kurotkin.netdemo.data.products.Product
 import com.kurotkin.netdemoapplication.R
 
-// TODO: 17. Работа со списком элеметов
+// TODO: 17. Работа со списком элементов
 class ProductAdapter : ListAdapter<Product, ProductHolder>(ProductDiffCallback()) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ProductHolder {

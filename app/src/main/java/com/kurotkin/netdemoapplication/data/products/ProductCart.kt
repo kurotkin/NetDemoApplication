@@ -2,7 +2,7 @@ package com.kurotkin.netdemo.data.products
 
 import com.google.gson.annotations.SerializedName
 
-// TODO: 3. Создаем классы для интерпритации данных из API
+// TODO: 3. Создаем классы для интерпретации данных из API
 
 data class ProductCart(
     @SerializedName("limit")

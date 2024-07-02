@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         // TODO: 5.Крайне примитивный способ
-        Note().primitive()
+        //Note().primitive()
 
 
         // TODO: 14. Класс предоставления данных UI
@@ -43,8 +43,8 @@ class MainActivity : AppCompatActivity() {
         productAdapter = ProductAdapter()
         rvList.adapter = productAdapter
     }
-
-    // TODO: 19. Подписка на скаченные данные
+//
+//    // TODO: 19. Подписка на скаченные данные
     private fun initObserves(){
         viewModel.products.observe(this){
             productAdapter.submitList(it)
